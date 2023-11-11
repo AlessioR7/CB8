@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  background-color: black;
+}
+.hero {
+  background-image: url(https://fastly.picsum.photos/id/385/1920/1080.jpg?hmac=cPvxEBKaH4ZB2q4yMIcq0iEklhFe-CLy0UUaO7J1ZOY);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-top: 140px;
+  font-size: 50px;
+}
+.button-container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Ho utilizzato questa proprietà per centrare il contenitore del pulsante rispetto al contenitore della hero*/
+}
+button {
+  height: 100%;
+  font-size: 50px;
+  cursor: pointer;
+  border-radius: 15px;
+  border: none;
+  background-color: aqua;
+}
+.hide {
+  display: none;
+}
+.image-container {
+  display: inline;
+}
