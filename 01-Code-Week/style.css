@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+.logo {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+
+.logo img {
+  width: 50px;
+  cursor: pointer;
+}
+
+.logo-account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 5px;
+}
+
+.logo-account h3 {
+  font-size: 24px;
+}
+
+.logo-account img {
+  width: 50px;
+  cursor: default;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #282828;
+  z-index: 2;
+  height: 95vh;
+  width: 65%;
+  transform: translate(-100%);
+  transition: 0.3s ease-in-out;
+  border-radius: 25px;
+}
+
+.sidebar-open {
+  transform: translate(0);
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  list-style-type: none;
+  padding-top: 40px;
+}
+
+.sidebar li {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.sidebar li:hover {
+  background-color: #3f3f3f;
+  cursor: pointer;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.sidebar-close {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sidebar-close p {
+  width: 40px;
+  text-align: center;
+  font-size: 28px;
+  border-radius: 100%;
+  color: #fff;
+}
+
+.sidebar-close p:hover {
+  background-color: #3f3f3f;
+  cursor: pointer;
+}
+
+.title {
+  position: relative;
+  height: 50vh;
+  font-size: 35px;
+  font-family: fantasy;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.title img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.title h1 {
+  position: absolute;
+}
+
+.users1 {
+  border: 10px solid black;
+}
+
+.users1-title {
+  font-family: cursive;
+  font-size: 24px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 10px solid black;
+}
+
+.users1-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 50px;
+  margin: 50px 0;
+}
+
+.users1-content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  border-top: 10px solid black;
+  border-radius: 40px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    193deg,
+    rgba(0, 0, 0, 0.9378378378378378) 31%,
+    rgba(101, 99, 99, 1) 57%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.users1-image img {
+  width: 80%;
+  border-radius: 40px;
+  margin-top: 40px;
+}
+
+.users1-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  gap: 40px;
+  color: lightblue;
+}
+
+.users1-content-text {
+  width: 20%;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+  font-size: 1rem;
+  margin-left: 8px;
+}
+
+.users1-content-data {
+  width: 80%;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .logo img {
+    display: none;
+  }
+  .logo-account img {
+    display: block;
+  }
+  .sidebar {
+    display: block;
+    transform: none;
+    width: 20rem;
+  }
+
+  .sidebar-close {
+    display: none;
+  }
+
+  .title {
+    margin-left: 20rem;
+  }
+  .users1 {
+    margin-left: 20rem;
+  }
+  .users1-title {
+    font-size: 30px;
+  }
+  .users1-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .users1-content {
+    max-width: 400px;
+  }
+  .users1-content-text {
+    font-size: 1.3rem;
+  }
+  .users1-content-data {
+    font-size: 1.3rem;
+  }
+}
