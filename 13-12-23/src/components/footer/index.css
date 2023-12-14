@@ -1,0 +1,13 @@
+.footer {
+  background-color: lightyellow;
+  color: black;
+  height: 200px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.footer-text {
+  width: 50%;
+}
