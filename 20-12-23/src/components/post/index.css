@@ -1,0 +1,94 @@
+img {
+  -webkit-user-drag: none;
+}
+
+.Post {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px;
+}
+
+.Post__info--user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.Post__info--user img {
+  width: 100px;
+  border-radius: 100%;
+  background-color: darkcyan;
+  object-fit: cover;
+}
+
+.Post__info--user h4 {
+  font-size: 1.3rem;
+}
+
+.Post__title {
+  margin: 0;
+}
+
+.Post__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Post__info--categories {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+  font-size: 0.8rem;
+  color: grey;
+}
+
+.Post hr {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid gray;
+}
+
+.Post__delete {
+  position: absolute;
+  bottom: 30px;
+  left: 25%;
+}
+
+.Post__delete span {
+  display: none;
+}
+
+.Post__delete button:hover {
+  border-color: black;
+}
+
+.Post__delete button {
+  background-color: red;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .Post__info--user img {
+    width: 200px;
+  }
+
+  .Post__info--user h4 {
+    font-size: 2.2rem;
+  }
+
+  .Post__delete {
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .Post__delete button {
+    width: 15rem;
+  }
+  .Post__delete span {
+    display: inline;
+  }
+}
