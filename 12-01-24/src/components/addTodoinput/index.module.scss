@@ -1,0 +1,33 @@
+.AddTodoInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  .input {
+    height: 40px;
+    width: 220px;
+    padding-left: 12px;
+    border-radius: 6px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+    border: 0;
+  }
+
+  .btn {
+    color: white;
+    background-color: blueviolet;
+    border: 1px solid black;
+  }
+
+  @media (min-width: 768px) {
+    .input {
+      width: 500px;
+      height: 70px;
+      font-size: 1.7rem;
+    }
+
+    .btn {
+      font-size: 1.7rem;
+    }
+  }
+}
