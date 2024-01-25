@@ -5,7 +5,6 @@
   gap: 10px;
   margin: 20px 0;
 
-
   .inputPokemon,
   .btnPokemon {
     display: flex;
@@ -23,7 +22,6 @@
   .btnPokemon {
     cursor: pointer;
   }
-
 }
 
 .Pokedex {
@@ -52,7 +50,7 @@
     gap: 20px;
 
     &::before {
-      content: 'Type: ';
+      content: "Type: ";
       color: lightseagreen;
       font-size: 1.4rem;
     }

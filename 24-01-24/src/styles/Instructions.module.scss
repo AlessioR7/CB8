@@ -4,8 +4,8 @@
   align-items: center;
   text-align: center;
   gap: 30px;
+  margin: 10px 10px;
   height: 100%;
-  width: 100%;
   background-image: url("https://wallpapercave.com/wp/wp8813131.jpg");
   background-position: center;
   background-size: cover;
@@ -19,6 +19,7 @@
     background-color: lime;
     border-radius: 20px;
     width: 100%;
+    min-height: 50px;
   }
 
   .text {
