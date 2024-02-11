@@ -1,0 +1,23 @@
+.Users {
+  padding-top: 80px;
+  padding-bottom: 1px;
+  background-image: linear-gradient(
+    to bottom,
+    #000cff,
+    #0035ff,
+    #004afd,
+    #005bf9,
+    #006af2
+  );
+
+  .check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 20rem;
+  }
+}

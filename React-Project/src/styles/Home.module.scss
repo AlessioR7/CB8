@@ -1,0 +1,15 @@
+.Home {
+  border: 6px solid black;
+  background-image: linear-gradient(
+    to bottom,
+    #000cff,
+    #0035ff,
+    #004afd,
+    #005bf9,
+    #006af2
+  );
+
+  @media (min-width: 768px) {
+    margin-left: 20rem;
+  }
+}

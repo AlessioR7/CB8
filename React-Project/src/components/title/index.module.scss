@@ -1,0 +1,25 @@
+.Title {
+  position: relative;
+  height: 50vh;
+  font-size: 35px;
+  font-family: fantasy;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+
+  .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .text {
+    position: absolute;
+  }
+
+  @media (min-width: 768px) {
+    margin-left: 20rem;
+  }
+}

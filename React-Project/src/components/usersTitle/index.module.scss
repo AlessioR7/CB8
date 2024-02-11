@@ -1,0 +1,16 @@
+.Title {
+  font-family: cursive;
+  font-size: 24px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #303030;
+  border-radius: 40px;
+  margin-top: 15px;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
+}
