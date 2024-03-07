@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Camicia uomo",
+    "price": 19.99,
+    "size": "M"
+  },
+  {
+    "id": 2,
+    "name": "Maglione uomo",
+    "price": 29.99,
+    "size": "L"
+  },
+  {
+    "id": 3,
+    "name": "Pantaloni uomo",
+    "price": 39.99,
+    "size": "XL"
+  },
+  {
+    "id": 4,
+    "name": "Giacca uomo",
+    "price": 59.99,
+    "size": "M"
+  },
+  {
+    "id": 5,
+    "name": "Jeans uomo",
+    "price": 49.99,
+    "size": "L"
+  },
+  {
+    "id": 6,
+    "name": "Polo uomo",
+    "price": 29.99,
+    "size": "M"
+  },
+  {
+    "id": 7,
+    "name": "Cappotto uomo",
+    "price": 99.99,
+    "size": "L"
+  },
+  {
+    "id": 8,
+    "name": "Felpa uomo",
+    "price": 39.99,
+    "size": "M"
+  },
+  {
+    "id": 9,
+    "name": "Shorts uomo",
+    "price": 24.99,
+    "size": "M"
+  },
+  {
+    "id": 10,
+    "name": "Cappello uomo",
+    "price": 14.99,
+    "size": "Unica"
+  }
+]

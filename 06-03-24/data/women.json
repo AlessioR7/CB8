@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Camicia donna",
+    "price": 19.99,
+    "size": "S"
+  },
+  {
+    "id": 2,
+    "name": "Maglione donna",
+    "price": 29.99,
+    "size": "M"
+  },
+  {
+    "id": 3,
+    "name": "Pantaloni donna",
+    "price": 39.99,
+    "size": "L"
+  },
+  {
+    "id": 4,
+    "name": "Giacca donna",
+    "price": 59.99,
+    "size": "S"
+  },
+  {
+    "id": 5,
+    "name": "Jeans donna",
+    "price": 49.99,
+    "size": "M"
+  },
+  {
+    "id": 6,
+    "name": "Polo donna",
+    "price": 29.99,
+    "size": "S"
+  },
+  {
+    "id": 7,
+    "name": "Cappotto donna",
+    "price": 99.99,
+    "size": "M"
+  },
+  {
+    "id": 8,
+    "name": "Felpa donna",
+    "price": 39.99,
+    "size": "S"
+  },
+  {
+    "id": 9,
+    "name": "Shorts donna",
+    "price": 24.99,
+    "size": "M"
+  },
+  {
+    "id": 10,
+    "name": "Cappello donna",
+    "price": 14.99,
+    "size": "Unica"
+  }
+]

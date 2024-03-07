@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Camicia bambino",
+    "price": 9.99,
+    "size": "XS"
+  },
+  {
+    "id": 2,
+    "name": "Maglione bambino",
+    "price": 14.99,
+    "size": "S"
+  },
+  {
+    "id": 3,
+    "name": "Pantaloni bambino",
+    "price": 19.99,
+    "size": "M"
+  },
+  {
+    "id": 4,
+    "name": "Giacca bambino",
+    "price": 29.99,
+    "size": "XS"
+  },
+  {
+    "id": 5,
+    "name": "Jeans bambino",
+    "price": 24.99,
+    "size": "S"
+  },
+  {
+    "id": 6,
+    "name": "Polo bambino",
+    "price": 14.99,
+    "size": "M"
+  },
+  {
+    "id": 7,
+    "name": "Cappotto bambino",
+    "price": 39.99,
+    "size": "S"
+  },
+  {
+    "id": 8,
+    "name": "Felpa bambino",
+    "price": 19.99,
+    "size": "M"
+  },
+  {
+    "id": 9,
+    "name": "Shorts bambino",
+    "price": 14.99,
+    "size": "S"
+  },
+  {
+    "id": 10,
+    "name": "Cappello bambino",
+    "price": 9.99,
+    "size": "Unica"
+  }
+]
