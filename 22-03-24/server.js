@@ -1,7 +1,11 @@
+require("dotenv").config();
+
 const express = require("express");
 const mongoose = require("mongoose");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
 const Book = require("./models/Book");
-require("dotenv").config();
+const User = require("./models/User");
 
 const app = express();
 const db = mongoose.connection;
@@ -13,6 +17,52 @@ db.on("error", (err) => console.error(err));
 db.once("open", () => console.log("Connected to MongoDB"));
 
 app.use(express.json());
+
+app.post("/register", async (req, res) => {
+  try {
+    const hashedPassword = await bcrypt.hash(req.body.password, 10);
+    const user = new User({
+      username: req.body.username,
+      password: hashedPassword,
+    });
+    const newUser = await user.save();
+    res.status(201).json(newUser);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+
+app.post("/login", async (req, res) => {
+  const user = await User.findOne({ username: req.body.username });
+  if (user == null) {
+    return res.status(400).json({ message: "Cannot find user" });
+  }
+  try {
+    if (await bcrypt.compare(req.body.password, user.password)) {
+      const accessToken = jwt.sign(
+        user.toJSON(),
+        process.env.ACCESS_TOKEN_SECRET
+      );
+      res.json({ accessToken: accessToken });
+    } else {
+      res.json({ message: "Not Allowed" });
+    }
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+});
+
+const authenticateToken = (req, res, next) => {
+  const authHeader = req.headers["authorization"];
+  const token = authHeader && authHeader.split(" ")[1];
+
+  if (token == null) return res.sendStatus(401);
+  jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
+    if (err) return res.sendStatus(403);
+    req.user = user;
+    next();
+  });
+};
 
 app.post("/books", async (req, res) => {
   const book = new Book({
@@ -28,7 +78,7 @@ app.post("/books", async (req, res) => {
   }
 });
 
-app.get("/books", async (req, res) => {
+app.get("/books", authenticateToken, async (req, res) => {
   const page = parseInt(req.query.page) || 1;
   const limit = parseInt(req.query.limit) || 10;
   const skip = (page - 1) * limit;
